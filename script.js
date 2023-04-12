@@ -101,3 +101,7 @@ document.addEventListener('keydown', function (e) {
     document.querySelector('.rules').classList.add('hidden');
   }
 });
+document.querySelector('.overlay').addEventListener('click', function () {
+  document.querySelector('.overlay').classList.add('hidden');
+  document.querySelector('.rules').classList.add('hidden');
+});
