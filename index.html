@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONE & DONE</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <button class="instruction">GAME RULES</button>
+    <div class="hidden rules">
+      1-Each turn, a player repeatedly ROLLS a die until either a 1 is rolled or
+      the player decides to "HOLD" <br />
+      2-If the player ROLLS a 1, they score NOTHING and it becomes the next
+      player's turn. <br />
+      3-If the player ROLLS any other number, it is added to their CURRENT total
+      and the player's turn continues.<br />
+      4-If a player chooses to "HOLD", their CURRENT total is added to their
+      SCORE, and it becomes the next player's turn. <br />
+      5-The first player to score 100 or more points
+    </div>
+    <div class="mid">
+      <div class="left box color">
+        <div class="up">
+          <h2>PLAYER 1</h2>
+          <span class="score A">0</span>
+        </div>
+        <div class="down">
+          <span class="current">
+            CURRENT
+            <p class="currscore C">0</p>
+          </span>
+        </div>
+      </div>
+
+      <button class="buton newgame">🔁 NEW GAME</button>
+      <img src="./dice-1.png" alt="" class="dice hidden" />
+      <button class="buton rolldice">🎲 ROLL DICE</button>
+      <button class="buton hold">♦ HOLD</button>
+
+      <div class="right box">
+        <div class="up">
+          <h2>PLAYER 2</h2>
+          <span class="score B">0</span>
+        </div>
+        <din class="down">
+          <span class="current">
+            CURRENT
+            <p class="currscore D">0</p>
+          </span>
+        </din>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+  <script src="script.js"></script>
+  </html>
+  </html>
+</html>
