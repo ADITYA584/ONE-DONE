@@ -46,15 +46,15 @@ document.querySelector('.rolldice').addEventListener('click', function () {
 });
 
 document.querySelector('.hold').addEventListener('click', function () {
-  score[`${i}`].textContent = Number(score[`${i}`].textContent) + value;
-  console.log(score[0].textContent);
-  console.log(score[1].textContent);
-  if (score[`${i}`].textContent >= '100') {
+  score[i].textContent = String(Number(score[`${i}`].textContent) + value);
+
+  if (Number(score[i].textContent) >= 100) {
     chance = true;
     document.querySelector('.right').classList.remove('color');
     document.querySelector('.left').classList.add('color');
     image.classList.add('hidden');
-    currscore[`${i}`].textContent = 0;
+    currscore[0].textContent = 0;
+    currscore[1].textContent = 0;
     score[0].textContent = 0;
     score[1].textContent = 0;
     value = 0;
@@ -72,7 +72,6 @@ document.querySelector('.hold').addEventListener('click', function () {
     chance = !chance;
     image.classList.add('hidden');
     currscore[`${i}`].textContent = 0;
-
     value = 0;
     i = (i + 1) % 2;
   }
